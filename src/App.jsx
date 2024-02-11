@@ -1,17 +1,15 @@
 import { Routes , Route , useLocation, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Resume from './pages/Resume';
+import RoutesMap from './components/RoutesMap';
+import Header from './components/Header';
 function App() {
   
 
   return (
     <>
-        <Link to='/'>Home</Link>
-        <Link to='/resume'>resume</Link>
-        <Routes>
-      <Route path='/' element={<Home/>}></Route>
-      <Route path='/resume' element={<Resume/>}></Route>
-    </Routes>
+      <Header/>
+      <RoutesMap/>
     </>
   )
 }

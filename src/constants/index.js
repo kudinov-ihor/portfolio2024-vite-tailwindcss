@@ -1,9 +1,9 @@
-import Home from "../pages/Home"
-import Resume from "../pages/Resume"
+import { Home, Resume, Projects, Contacts } from "../pages"
 
-export default navLinks = [
-    {href: '/', label: 'Home'},
-    {href: '/resume', label: 'Resume'},
-    {href: '/projects', label: 'Projects'},
-    {href: '/contacts', label: 'Contacts'}
-]
+export const navLinks = [
+    { href: '/', label: 'Home', component: Home },
+    { href: '/resume', label: 'Resume', component: Resume},
+    { href: '/projects', label: 'Projects', component: Projects },
+    { href: '/contacts', label: 'Contacts', component: Contacts }
+];
+

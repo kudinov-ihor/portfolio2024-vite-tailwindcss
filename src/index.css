@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .header-logo {
+        @apply text-2xl  relative before:absolute before:w-[25px] before:h-[25px] before:bg-[#eea302] before:left-[-30px] before:top-[50%] before:translate-y-[-50%] before:rounded-full
+    }
+}

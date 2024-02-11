@@ -1,5 +1,5 @@
 # React + Vite
-
+[GITHUBPAGES](https://kudinov-ihor.github.io/portfolio2024-vite-tailwindcss/)
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

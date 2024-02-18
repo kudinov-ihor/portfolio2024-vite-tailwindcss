@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Resume from './pages/Resume';
 import RoutesMap from './components/RoutesMap';
 import Header from './components/Header';
+import Footer from './components/Footer';
 function App() {
   
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <Header/>
       <RoutesMap/>
+      <Footer/>
     </>
   )
 }

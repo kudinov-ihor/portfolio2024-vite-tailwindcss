@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
 import logo_come_back_alive from "../assets/img/logo_come_back_alive.svg";
-
+import hamburger from '../assets/icons/hamburger.svg'
 const Header = () => {
   return (
     <header className="container mx-auto flex justify-between items-center py-[30px]">
@@ -18,11 +18,14 @@ const Header = () => {
           <Link
             key={link.label}
             to={link.href}
-            className="relative font-normal p-[20px] after:absolute after:w-[1px] after:h-[30%] after:bg-black after:right-0 after:top-[50%] after:translate-y-[-50%] last:after:h-0"
+            className="relative max-lg:hidden font-normal p-[20px] after:absolute after:w-[1px] after:h-[30%] after:bg-black after:right-0 after:top-[50%] after:translate-y-[-50%] last:after:h-0"
           >
             {link.label}{" "}
           </Link>
         ))}
+        <div className="hidden max-lg:block">
+          <img src={hamburger} alt="hamburger" width={25} height={25} />
+        </div>
       </nav>
     </header>
   );

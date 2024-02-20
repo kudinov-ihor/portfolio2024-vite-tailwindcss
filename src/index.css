@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    @apply transition-colors duration-200;
+}
+
 @layer utilities {
     .header-logo {
         @apply text-2xl  relative before:absolute before:w-[25px] before:h-[25px] before:bg-[#eea302] before:left-[-30px] before:top-[50%] before:translate-y-[-50%] before:rounded-full
+    }
+    .blue-gradient_text {
+        @apply bg-gradient-to-r from-[#eea302] to-[#8f6a04] bg-clip-text text-transparent;
     }
 }

@@ -3,15 +3,19 @@ import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
 import logo_come_back_alive from "../assets/img/logo_come_back_alive.svg";
 import hamburger from '../assets/icons/hamburger.svg'
-const Header = () => {
+const Header = ({toggleDarkMode}) => {
   return (
     <header className="container mx-auto flex justify-between items-center py-[30px]">
-      <div className="flex gap-5 items-center">
-        <h4 className="header-logo">
-          Kudinov Ihor
-        </h4>
-        <span className="text-lg">Front End Developer</span>
-        <img src={logo_come_back_alive} alt="Come Back Aive" className="h-[100%]" />
+      <div className="flex gap-5 justify-center items-center">
+      <Link
+        to="/"
+        className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
+      >
+        <p className="blue-gradient_text ">KI</p>
+      </Link>
+
+        <img src={logo_come_back_alive} alt="Come Back Aive" className="h-10" />
+        <button onClick={toggleDarkMode}>213</button>
       </div>
       <nav>
         {navLinks.map((link) => (

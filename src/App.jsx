@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { Routes, Route, useLocation, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Resume from "./pages/Resume";
@@ -14,9 +14,11 @@ function App() {
   return (
     <div className={`${darkMode && "dark"} `}>
       <main className="dark:bg-black">
-        <Header toggleDarkMode={toggleDarkMode}/>
-        <RoutesMap />
-        <Footer />
+        <Suspense fallback={''}>
+          <Header toggleDarkMode={toggleDarkMode} />
+          <RoutesMap />
+          <Footer />
+        </Suspense>
       </main>
     </div>
   );

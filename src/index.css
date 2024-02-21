@@ -13,4 +13,5 @@
     .blue-gradient_text {
         @apply bg-gradient-to-r from-[#eea302] to-[#8f6a04] bg-clip-text text-transparent;
     }
+
 }

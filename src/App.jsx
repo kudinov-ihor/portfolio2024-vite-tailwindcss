@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className={`${darkMode && "dark"} `}>
-      <main className="dark:bg-black">
+      <main className="dark:bg-[#333333]">
         <Suspense fallback={''}>
           <Header toggleDarkMode={toggleDarkMode} />
           <RoutesMap />

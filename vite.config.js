@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base:"/portfolio2024-vite-tailwindcss/",
   plugins: [react()],
+  assetsInclude: ['**/*.glb']
 })

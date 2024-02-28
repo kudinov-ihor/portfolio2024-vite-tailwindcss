@@ -1,7 +1,4 @@
 import { useState, Suspense } from "react";
-import { Routes, Route, useLocation, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import Resume from "./pages/Resume";
 import RoutesMap from "./components/RoutesMap";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,7 +10,7 @@ function App() {
 
   return (
     <div className={`${darkMode && "dark"} `}>
-      <main className="dark:bg-[#333333]">
+      <main className="dark:bg-[#333333] h-full">
         <Suspense fallback={''}>
           <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
           <RoutesMap />

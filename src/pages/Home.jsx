@@ -13,7 +13,7 @@ const Home = () => {
   
 
   return (
-    <section className="container max-sm:px-[10px] m-auto py-[100px] flex justify-center items-start">
+    <section className="max-container max-sm:px-[10px] m-auto py-[100px] flex justify-center items-start">
       <div>
         <h3 className="text-8xl ">Hello</h3>
         <h4 className="mt-5 text-2xl">A Bit About Me</h4>

@@ -6,7 +6,7 @@ import hamburger from "../assets/icons/hamburger.svg";
 import { FaSun, FaMoon } from "react-icons/fa";
 const Header = ({ toggleDarkMode, darkMode }) => {
   return (
-    <header className="container mx-auto flex justify-between items-center py-[30px]">
+    <header className="container p-4 mx-auto flex justify-between items-center py-[30px]">
       <div className="flex gap-5 justify-center items-center">
         <Link
           to="/"
@@ -17,16 +17,16 @@ const Header = ({ toggleDarkMode, darkMode }) => {
 
         
         <button
-          className=" w-12 h-12 rounded-full flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-700 transition duration-300 ease-in-out"
+          className=" w-70 h-70 p-2 rounded-full flex items-center justify-center hover:outline-none hover:ring-2 hover:ring-gray-500 dark:hover:ring-gray-700 transition duration-300 ease-in-out"
           onClick={toggleDarkMode}
         >
           {darkMode ? (
-            <div className="text-gray-700 dark:text-gray-300">
-              <FaMoon />
+            <div className="text-gray-700 dark:text-gray-300 ">
+              <FaMoon size={25} />
             </div>
           ) : (
             <div className="text-yellow-500 dark:text-yellow-300">
-              <FaSun />
+              <FaSun size={25} />
             </div>
           )}
         </button>

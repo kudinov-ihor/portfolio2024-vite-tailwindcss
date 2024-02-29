@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
     @apply transition-colors duration-200;
+    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -26,11 +27,11 @@ body:has(.card[data-color="blue"]:hover) {
     }
 
     .head-text {
-      @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+      @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-montserrat;
     }
   
     .subhead-text {
-      @apply font-semibold sm:text-3xl text-xl relative font-poppins;
+      @apply font-semibold sm:text-3xl text-xl relative font-montserrat;
     }
   
     .blue-gradient_text {

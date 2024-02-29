@@ -18,10 +18,7 @@ const Home = () => {
         <h3 className="text-8xl ">Hello</h3>
         <h4 className="mt-5 text-2xl">A Bit About Me</h4>
         <h1 className="max-w-[500px] max-sm:max-w-[100%] mt-5 dark:text-white">
-          I'm an enthusiastic and detail-oriented Front-End developer seeking an
-          entry-level position with company to use my skills in coding. Ready to
-          join a new team of professionals, always ready to learn something new
-          and share my experience.
+        I am a young and passionate developer from Ukraine, aged 25, seeking to join a dedicated team to further enhance my skills as a React Frontend Developer. Eager to contribute my knowledge and energy towards achieving common goals and success in an innovative and stimulating environment.
         </h1>
         <div className="flex gap-10 flex-wrap justify-center max-xs:flex-col mt-10">
           {filteredLinks.map((link) => (

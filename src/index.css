@@ -99,7 +99,9 @@ body:has(.card[data-color="blue"]:hover) {
     transition: 250ms;
     perspective: 500px;
   }
-  
+  .shadow-box{
+    box-shadow: 10px 15px 30px #e4e4e4;
+  }
   .block-container .btn-back {
     position: absolute;
     inset: 0;
